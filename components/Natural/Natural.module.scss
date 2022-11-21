@@ -22,7 +22,7 @@
     }
     .NaturalContent {
       display: flex;
-      gap: 20px;
+      gap: 60px;
       padding-top: 4rem;
       overflow-x: scroll;
 
@@ -31,8 +31,9 @@
         width: 49px;
       }
       h3 {
-        font-size: 5rem;
+        font-size: 2.6rem;
         padding-top: 1rem;
+        font-weight: 700;
         color: var(--gray-dark);
       }
       p {

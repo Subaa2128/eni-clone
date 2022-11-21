@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import BackgroundImage from "../components/BackgroundImage";
 import styles from "../styles/Home.module.scss";
-import Natural from "../components/Natural";
-import Topic from "../components/Topic";
+import Explore from "../public/assets/home/images/CoralSouth-project.jpg";
 const Home: NextPage = () => {
   return (
     <div className={styles.home}>
@@ -12,8 +12,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Topic />
-        <Natural />
+        <BackgroundImage image={Explore}>
+          <h1>Eni's Coral South project</h1>
+          <h5>Towards new horizons with Coral Sul FLNG.</h5>
+        </BackgroundImage>
       </main>
     </div>
   );

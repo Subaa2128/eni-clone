@@ -1,18 +1,30 @@
 export const DemoNatural = [
   {
-    percentage: "60%",
-    description: "share of gas on total production in 2030",
+    percentage: ">1 Mton/y",
+    description: "CO₂ captured and stored using CCS",
   },
   {
-    percentage: ">90%",
-    description: "share of gas on total production in 2050",
+    percentage: "~2 Mton/y",
+    description: "total biorafinery capacity",
   },
   {
-    percentage: "-43%",
-    description: "in emission intensity of upstream in 2025",
+    percentage: "11.5 Millions",
+    description: "client portfolio (Plenitude 100%)",
   },
   {
-    percentage: "-92%",
-    description: "fugitive methane emissions in 2021 (vs 2014)",
+    percentage: ">6 GW",
+    description: "installed capacity in renewables (Plenitude 100%)",
+  },
+  {
+    percentage: "~30 Thousand",
+    description: "electric vehicle charging ponts (Plenitude 100%)",
+  },
+  {
+    percentage: "-40 %",
+    description: "Net GHG emissions Scope 1+2 Group (vs 2014)",
+  },
+  {
+    percentage: "-65 %",
+    description: "Net GHG emissions Scope 1+2 Upstream (vs 2014)",
   },
 ];
