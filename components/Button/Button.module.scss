@@ -1,0 +1,39 @@
+%base-styles {
+  outline: none;
+  border: none;
+  padding: 0.8rem 6rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+
+  &:disabled {
+    cursor: no-drop;
+    opacity: 0.7;
+  }
+}
+
+.btnPrimary {
+  @extend %base-styles;
+  background: var(--yellow);
+  color: var(--dark);
+}
+
+.btnSecondary {
+  @extend %base-styles;
+  background: transparent;
+  color: #000;
+  border: 1px solid var(--btn-primary);
+}
+
+.btnError {
+  @extend %base-styles;
+  background-color: tomato;
+  color: var(--text-primary);
+  box-shadow: 0px 4px 10px rgba(255, 99, 71, 0.25);
+  padding: 0.8rem;
+}

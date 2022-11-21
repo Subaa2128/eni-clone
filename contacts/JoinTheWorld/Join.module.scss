@@ -1,0 +1,45 @@
+.joinContainer {
+  position: relative;
+  .joinWrapper {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../../public/assets/contacts/images/join-the-worldImg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0;
+    text-align: center;
+    width: 100%;
+    height: 58vh;
+    &:hover {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../../public/assets/contacts/images/join-the-worldImg.jpg");
+    }
+    .joinContent {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--white);
+      @media (max-width: 1024px) {
+        left: 10%;
+        transform: translate(0%, -50%);
+      }
+      @media (max-width: 873px) {
+        left: 2%;
+      }
+
+      h1 {
+        font-size: 4rem;
+        @media (max-width: 873px) {
+          font-size: 3rem;
+        }
+      }
+      p {
+        padding: 1rem 0;
+      }
+      Button {
+        margin: 0.8rem auto;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

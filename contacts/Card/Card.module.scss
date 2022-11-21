@@ -1,0 +1,26 @@
+.cardContainer {
+  background: var(--light);
+  .cardWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 3rem;
+    padding: 4rem 0;
+
+    .cardContent {
+      padding: 2rem;
+      text-align: center;
+      background: var(--white);
+      border-radius: 6px;
+      box-shadow: 0 0 13px 0 rgb(0 0 0 / 40%);
+      display: grid;
+      grid-template-rows: 9fr 1fr;
+      h1 {
+        padding-bottom: 1rem;
+        font-size: 1.6rem;
+      }
+      p {
+        color: var(--dark);
+      }
+    }
+  }
+}
