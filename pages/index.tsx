@@ -12,10 +12,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <BackgroundImage image={Explore}>
-          <h1>Eni's Coral South project</h1>
-          <h5>Towards new horizons with Coral Sul FLNG.</h5>
-        </BackgroundImage>
+        <BackgroundImage image={Explore}>ello</BackgroundImage>
+        <BackgroundImage image={Explore}>ello</BackgroundImage>
+        <BackgroundImage image={Explore}>ello</BackgroundImage>
       </main>
     </div>
   );
