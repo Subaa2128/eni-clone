@@ -13,6 +13,8 @@ const Home: NextPage = () => {
       </Head>
       <main>
         <BackgroundImage image={Explore}>ello</BackgroundImage>
+        <BackgroundImage image={Explore}>ello</BackgroundImage>
+        <BackgroundImage image={Explore}>ello</BackgroundImage>
       </main>
     </div>
   );

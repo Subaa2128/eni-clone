@@ -1,38 +1,69 @@
 .header {
-  position: relative;
+  position: fixed;
+  z-index: 100;
   background-color: transparent;
-  height: 100%;
   margin: 0 auto;
   width: 100%;
   .logo_container {
-    padding: 2rem 6rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
     .logo {
       background-color: var(--white);
-      width: 200px;
       clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
-      .svg {
-        width: 100%;
+      padding: 0rem 6rem;
+
+      svg {
+        width: 50%;
+        padding: 1rem;
       }
     }
     .contact {
       display: flex;
       gap: 3rem;
-      padding: 2rem;
+      padding: 0rem 6rem;
+      color: var(--white);
+      text-transform: capitalize;
       @media (max-width: 1000px) {
         display: none;
+      }
+      a {
+        color: var(--white);
+        text-transform: capitalize;
+        border-right: 1px solid #fff;
+        height: fit-content;
+        padding-right: 1.5rem;
       }
       .icon {
         display: flex;
         align-items: center;
+        gap: 1rem;
+        p {
+          border-right: 1px solid #fff;
+          height: fit-content;
+          padding-right: 1.5rem;
+        }
       }
       .drop_container {
+        display: flex;
+        align-items: center;
+        position: relative;
         .drop {
           display: flex;
           align-items: center;
+          gap: 1rem;
+        }
+        .drop_down {
+          position: absolute;
+          top: 100%;
+          width: 50px;
+          background-color: #fff;
+          p {
+            color: var(--black);
+            padding: 1rem;
+            text-align: center;
+          }
         }
       }
     }
@@ -44,12 +75,15 @@
       }
     }
   }
+  .product_services {
+    background-color: #fff;
+  }
   .search {
-    margin: 0 4rem;
+    margin: 2rem 7rem;
     display: flex;
     gap: 3rem;
-    width: 93%;
-    border: 1px solid black;
+    width: 90%;
+    border: 1px solid var(--white);
     border-radius: 25px;
     padding: 1rem;
     @media (max-width: 1000px) {
@@ -57,23 +91,37 @@
     }
     &:hover {
       border: 1px solid var(--yellow);
+      svg {
+        color: var(--yellow);
+      }
+    }
+    svg {
+      color: rgba(255, 255, 255, 0.8);
     }
     input {
       width: 100%;
       border: none;
       outline: none;
+      background-color: transparent;
+      color: rgba(255, 255, 255, 0.8);
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.8);
+      }
     }
   }
   .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 6rem;
+    padding: 2rem 7.5rem 1rem;
+    color: #fff;
     .home {
       display: flex;
       gap: 2rem;
       h4 {
+        font-size: 1.8rem;
         border-bottom: 1px solid var(--yellow);
+
         &:hover {
           border-bottom: 0.3rem solid var(--yellow);
         }
@@ -83,8 +131,12 @@
         display: flex;
         gap: 1rem;
         align-items: center;
+        border-left: 1px solid #fff;
+        height: fit-content;
+        padding-left: 1.5rem;
+        cursor: pointer;
         span {
-          border: 1px solid black;
+          border: 1px solid var(--white);
           border-radius: 50%;
           width: 2rem;
           display: flex;
@@ -97,6 +149,14 @@
       display: flex;
       align-items: center;
       gap: 2rem;
+      .box {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        svg {
+          font-size: 3rem;
+        }
+      }
       @media (max-width: 600px) {
         display: none;
       }
