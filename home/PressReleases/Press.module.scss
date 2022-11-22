@@ -1,0 +1,60 @@
+.pressReleasesContainer {
+  .pressReleasesHead {
+    h2 {
+      font-size: 3.6rem;
+    }
+    p {
+      margin-top: 0.8rem;
+    }
+  }
+  .pressReleasesWrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 4rem 0;
+    .pressReleaseContent {
+      padding: 2rem;
+      border-radius: 6px;
+      max-width: 290px;
+      width: 100%;
+      aspect-ratio: 3.5/5;
+      height: 100%;
+      color: var(--dark);
+      box-shadow: 0 0 13px 0 rgb(0 0 0 / 40%);
+      transition: 0.4s all;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.05);
+      }
+      .pressTitle {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        .borderLeft {
+          border-top: 5px solid var(--yellow);
+          width: 35px;
+          margin-bottom: 1rem;
+          transform: translateX(-10deg);
+          &:hover {
+            transform: translateY(-70deg);
+          }
+        }
+        h5 {
+          font-weight: 500;
+          font-size: 1.4rem;
+          padding-bottom: 1rem;
+        }
+      }
+      p {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        padding: 0.6rem 0;
+      }
+
+      h4 {
+        font-size: 1.6rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
