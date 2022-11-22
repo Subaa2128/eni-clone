@@ -12,9 +12,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <BackgroundImage image={Explore}>ello</BackgroundImage>
-        <BackgroundImage image={Explore}>ello</BackgroundImage>
-        <BackgroundImage image={Explore}>ello</BackgroundImage>
+        <BackgroundImage url={Explore}>ello</BackgroundImage>
+        {/* <BackgroundImage image={Explore}>ello</BackgroundImage>
+        <BackgroundImage image={Explore}>ello</BackgroundImage> */}
       </main>
     </div>
   );
