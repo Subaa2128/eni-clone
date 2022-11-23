@@ -11,8 +11,8 @@ const home = () => {
   return (
     <div>
       <Hero />
-      <Topic />
       <PressReleases />
+      <Topic />
       <CoralSouthProject />
       <News />
       <Natural />

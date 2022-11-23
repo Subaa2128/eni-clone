@@ -1,6 +1,6 @@
 .pressReleasesContainer {
   .pressReleasesHead {
-    padding: 0 4rem;
+    padding: 2.5rem 8rem 0 8rem;
     h2 {
       font-size: 2.8rem;
       font-weight: 600;
@@ -25,15 +25,16 @@
       box-shadow: 0 0 13px 0 rgb(0 0 0 / 40%);
       transition: 0.4s all;
       cursor: pointer;
-      margin: 2rem 3rem;
+      margin: 1.6rem 2rem 2rem 8rem;
 
       &:hover {
         transform: scale(1.05);
       }
       .imgBorderBottom {
-        border-top: 6px solid var(--yellow);
-        width: 90px;
+        border-top: 5.2px solid var(--yellow);
+        width: 100px;
         margin-top: -5px;
+        margin-bottom: 1.5rem;
       }
 
       .pressTitle {
@@ -47,7 +48,8 @@
         }
         h5 {
           font-weight: 500;
-          font-size: 1.4rem;
+          font-size: 1.2rem;
+          letter-spacing: 1px;
           padding-bottom: 1rem;
         }
       }

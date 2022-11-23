@@ -30,15 +30,11 @@ const News = () => {
                     className={styles.newsContent}
                     style={{
                       backgroundImage: `url(${f.bgImg.src})`,
+                      backgroundRepeat: "no-repeat",
+                      backgroundSize: "cover",
                     }}
                   >
                     <div className={styles.newsflexContent}>
-                      {/* <Image
-                      src={f.bgImg.src}
-                      alt={f.bgImg.alt}
-                      width={100}
-                      height={100}
-                    /> */}
                       <div className={styles.newsBoder}></div>
                       <h5>{f.title}</h5>
                     </div>
