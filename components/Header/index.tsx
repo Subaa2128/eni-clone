@@ -78,7 +78,7 @@ const Header = () => {
           <Search />
           <input
             type="text"
-            placeholder="Would you like to know morw? ask a question"
+            placeholder="Would you like to know more? ask a question"
           />
         </div>
         <div className={styles.navbar}>
