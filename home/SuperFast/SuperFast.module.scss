@@ -1,0 +1,71 @@
+.superFastContainer {
+  overflow: hidden;
+  position: relative;
+  .superFastWrapper {
+    color: var(--white);
+    cursor: pointer;
+    .superBgImg {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("../../public/assets/home/images/superFastImg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center 0;
+      width: 100%;
+      aspect-ratio: 2.6/1;
+      transition: all linear 0.7s;
+
+      &:hover {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("../../public/assets/home/images/superFastImg.jpg");
+        transition: all 0.7s;
+        transform: scale(1.1);
+      }
+    }
+    .superFastContent {
+      position: absolute;
+      bottom: 28%;
+      left: 10%;
+      .superFlexContent {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+
+        .superBorderLeft {
+          border-top: 4px solid var(--yellow);
+          width: 45px;
+        }
+        h6 {
+          font-size: 2rem;
+          font-weight: 500;
+        }
+      }
+      h3 {
+        font-size: 3rem;
+        font-weight: 500;
+      }
+      h4 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-top: 0.5rem;
+      }
+      .timeContent {
+        display: flex;
+        margin-top: 1rem;
+        h2 {
+          border-right: 2px solid var(--white);
+          padding-right: 1rem;
+        }
+        .clockFlexContent {
+          display: flex;
+          svg {
+            padding-left: 1rem;
+            width: 43px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -6,6 +6,7 @@ import Topic from "../components/Topic";
 import CoralSouthProject from "../home/CoralSouthProject";
 import News from "../home/News";
 import PressReleases from "../home/PressReleases";
+import SuperFast from "../home/SuperFast";
 import Technological from "../home/Technological";
 import styles from "../styles/Home.module.scss";
 
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
         <Topic />
         <CoralSouthProject />
         <News />
+        <SuperFast />
         <Natural />
         <Technological />
       </main>

@@ -8,6 +8,12 @@
         position: relative;
         width: 100%;
         aspect-ratio: 5.5/3;
+        @media (max-width: 873px) {
+          aspect-ratio: 3.4/3;
+        }
+        @media (max-width: 425px) {
+          aspect-ratio: 2.8/3;
+        }
       }
       .heroPara {
         position: absolute;
@@ -15,17 +21,36 @@
         left: 12%;
         right: 12%;
         color: var(--white);
+        @media (max-width: 1024px) {
+          bottom: 16%;
+        }
+        @media (max-width: 624px) {
+          bottom: 10%;
+        }
 
         h3 {
           font-size: 4rem;
           max-width: 900px;
           width: 100%;
           font-weight: 600;
-          line-height: 60px;
+
+          @media (max-width: 1024px) {
+            font-size: 2.8rem;
+          }
+          @media (max-width: 624px) {
+            font-size: 2.4rem;
+          }
+          @media (max-width: 425px) {
+            font-size: 2rem;
+          }
         }
         p {
           font-size: 1.6rem;
           margin-top: 1rem;
+          @media (max-width: 1024px) {
+            margin-top: 0;
+            font-size: 1.4rem;
+          }
         }
       }
       .flexContent {
@@ -36,9 +61,9 @@
         bottom: 16%;
         left: 12%;
         right: 12%;
-        // @media (max-width: 1024px) {
-        //   display: none;
-        // }
+        @media (max-width: 1024px) {
+          display: none;
+        }
         h4 {
           margin-top: 0.8rem;
         }

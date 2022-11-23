@@ -21,17 +21,20 @@
       color: var(--dark);
       box-shadow: 0 0 13px 0 rgb(0 0 0 / 40%);
       cursor: pointer;
-      margin: 3.5rem 2rem 2rem 8rem;
+      margin: 3.5rem 2rem 4rem 8rem;
       transition: 0.4s all;
       color: var(--white);
+
       &:hover {
         transform: scale(1.05);
+        filter: blur(1.5px);
       }
 
       .newsflexContent {
         display: flex;
         align-items: center;
         gap: 10px;
+
         .newsBoder {
           border-top: 4px solid var(--yellow);
           width: 35px;

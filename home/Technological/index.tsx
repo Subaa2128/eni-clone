@@ -6,6 +6,7 @@ const Technological = () => {
     <div className={styles.technologicalContainer}>
       <div className="mx">
         <div className={styles.technologicalWrapper}>
+          <div className={styles.technologicalBgImg}></div>
           <div className={styles.technologicalContent}>
             <h2>
               Eni is a global energy company with a <br /> high technological

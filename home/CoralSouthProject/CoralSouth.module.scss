@@ -2,18 +2,22 @@
   position: relative;
   overflow: hidden;
   .coralSouthWrapper {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("../../public/assets/home/images/CoralSouth-project.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center 0;
-    width: 100%;
-    aspect-ratio: 2.6/1;
-    transition: all linear 0.7s;
     color: var(--white);
-    &:hover {
-      transition: all 0.7s;
-      transform: scale(1.1);
+    cursor: pointer;
+
+    .coralSouthBgImg {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../../public/assets/home/images/CoralSouth-project.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center 0;
+      width: 100%;
+      aspect-ratio: 2.6/1;
+      transition: all linear 0.7s;
+      &:hover {
+        transition: all 0.7s;
+        transform: scale(1.1);
+      }
     }
     .coralContent {
       position: absolute;
