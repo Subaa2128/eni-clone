@@ -1,0 +1,40 @@
+.voucherContainer {
+  .voucherWrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 5rem 0;
+    @media (max-width: 670px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 425px) {
+      grid-template-columns: 1fr;
+    }
+    .voucherContent {
+      padding: 2rem;
+      background: var(--light);
+      text-align: center;
+      display: grid;
+      grid-template-rows: 2fr 1fr;
+      .borderTop {
+        border-top: 4px solid var(--yellow);
+        width: 74px;
+        margin: auto;
+      }
+      p {
+        padding-top: 1rem;
+        font-size: 1.2rem;
+      }
+      h6 {
+        padding-bottom: 1.5rem;
+      }
+
+      .voucherImg {
+        position: relative;
+        width: 160px;
+        height: 35px;
+        padding-top: 2rem;
+        margin: auto;
+      }
+    }
+  }
+}

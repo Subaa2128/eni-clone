@@ -1,0 +1,37 @@
+.technologicalContainer {
+  position: relative;
+  overflow: hidden;
+  .technologicalWrapper {
+    color: var(--white);
+    cursor: pointer;
+    .technologicalBgImg {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../../public/assets/home/images/technological-contentImg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center 0;
+      width: 100%;
+      aspect-ratio: 2.6/1;
+      transition: all linear 0.7s;
+      &:hover {
+        transition: all 0.7s;
+        transform: scale(1.1);
+      }
+    }
+    .technologicalContent {
+      position: absolute;
+      top: 44%;
+      left: 4%;
+      transform: translate(8%, 20%);
+      h2 {
+        font-size: 3rem;
+        font-weight: 500;
+      }
+      h6 {
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-top: 0.8rem;
+      }
+    }
+  }
+}

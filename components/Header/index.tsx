@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./Header.module.scss";
 import Explore from "./Explore";
-import { GoGraph } from "react-icons/go";
-import { FiVideo } from "react-icons/fi";
-import { FaHardHat } from "react-icons/fa";
+// import { GoGraph } from "react-icons/go";
+// import { FiVideo } from "react-icons/fi";
+// import { FaHardHat } from "react-icons/fa";
 import Logo from "../../public/assets/Header/logo/logo.svg";
 import DropArrow from "../../public/assets/Header/icons/drop-arrow.svg";
 import FourSquare from "../../public/assets/Header/icons/four-square.svg";
@@ -21,10 +21,12 @@ const Header = () => {
       <div className="mx">
         <div className={styles.logo_container}>
           <div className={styles.logo}>
-            <Logo />
+            <Link href={"/"}>
+              <Logo />
+            </Link>
           </div>
           <div className={styles.contact}>
-            <Link href={"/contacts"}>contacts</Link>
+            <Link href={"/contact"}>contacts</Link>
             <Link href={"/publications"}>publications</Link>
             <div className={styles.icon} onClick={() => setProduct((m) => !m)}>
               <FourSquare />
@@ -90,15 +92,15 @@ const Header = () => {
           </div>
           <div className={styles.investors}>
             <div className={styles.box}>
-              <GoGraph />
+              {/* <GoGraph /> */}
               <p>Investors</p>
             </div>
             <div className={styles.box}>
-              <FiVideo />
+              {/* <FiVideo /> */}
               <p>Media</p>
             </div>
             <div className={styles.box}>
-              <FaHardHat />
+              {/* <FaHardHat /> */}
               <p>Careers</p>
             </div>
           </div>
@@ -117,8 +119,8 @@ const Header = () => {
               <h5>media</h5>
               <h5>careers</h5>
               <span></span>
-              <h6>contacts</h6>
-              <h6>publication</h6>
+              <Link href={"/contact"}>contacts</Link>
+              <Link href={"/publications"}>publications</Link>
               <span></span>
               <div className={styles.language}>
                 <h5>EN</h5>

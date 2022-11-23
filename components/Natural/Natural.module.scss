@@ -1,0 +1,51 @@
+.NaturalContainer {
+  .NaturalWrapper {
+    padding: 4rem 2rem;
+    .NaturalImg {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      h1 {
+        font-size: 2.8rem;
+        font-weight: 500;
+        color: var(--gray-dark);
+      }
+
+      .borderLeft {
+        border-left: 2px solid var(--yellow);
+        height: 40px;
+      }
+    }
+    p {
+      padding-top: 1rem;
+      font-size: 1.6rem;
+    }
+    .NaturalContent {
+      padding-top: 4rem;
+      .overflow {
+        .borderTop {
+          border-top: 8px solid var(--yellow);
+          width: 49px;
+        }
+        .para {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          h5 {
+            font-size: 4rem;
+            font-weight: 400;
+            color: var(--dark);
+          }
+          p {
+            font-size: 2rem;
+          }
+        }
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

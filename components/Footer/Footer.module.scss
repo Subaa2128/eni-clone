@@ -1,0 +1,98 @@
+.footerContainer {
+  background: var(--dark);
+  .footerWrapper {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 1fr;
+    gap: 10px;
+    padding: 2rem 6rem 2rem 0;
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      padding: 2rem 1.8rem 2rem 2rem;
+    }
+
+    .leftBorder {
+      border-top: 1px solid var(--yellow);
+      border-width: 2.5px;
+      margin-top: 6.2rem;
+      @media (max-width: 1024px) {
+        display: none;
+      }
+    }
+    .footerOneContent {
+      padding-right: 100px;
+      @media (max-width: 1024px) {
+        padding: 0px;
+      }
+      .firstSet {
+        p {
+          font-size: 1.2rem;
+          color: var(--white);
+          line-height: 1.5;
+        }
+        .logoImg {
+          margin-bottom: 1.5rem;
+        }
+
+        h5 {
+          text-decoration: underline;
+          text-decoration-color: var(--yellow);
+          text-decoration-thickness: 2.4px;
+        }
+      }
+      .footerOneContentPara {
+        color: var(--white);
+        margin-top: 1.8rem;
+
+        h5 {
+          font-size: 1.2rem;
+        }
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+    .footerSecondContent {
+      h4 {
+        color: var(--yellow);
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        @media (max-width: 1024px) {
+          margin-top: 2rem;
+        }
+      }
+      .socialMedia {
+        display: flex;
+        gap: 50px;
+        padding-top: 2rem;
+      }
+    }
+    .policy {
+      .terms {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 28px;
+        padding: 2.8rem 0;
+      }
+      h4 {
+        color: var(--yellow);
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        margin-top: 4rem;
+      }
+    }
+    .otherLinks {
+      h4 {
+        color: var(--yellow);
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        margin-top: 3rem;
+      }
+      .calendar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 28px;
+        padding: 2.8rem 0;
+      }
+    }
+  }
+}
