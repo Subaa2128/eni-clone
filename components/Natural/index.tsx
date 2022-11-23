@@ -2,8 +2,17 @@ import React from "react";
 import styles from "../Natural/Natural.module.scss";
 import { DemoNatural } from "./Natural";
 import NaturalImg from "../../public/assets/home/icons/natural.svg";
+import Slider from "react-slick";
 
 const Natural = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 2,
+    autoplay: true,
+  };
   return (
     <div className={styles.NaturalContainer}>
       <div className="mx pad">
@@ -20,15 +29,21 @@ const Natural = () => {
           </p>
 
           <div className={styles.NaturalContent}>
-            {DemoNatural.map((f, index) => {
-              return (
-                <div key={index} className={styles.overflow}>
-                  <div className={styles.borderTop}></div>
-                  <h3>{f.percentage}</h3>
-                  <p>{f.description}</p>
-                </div>
-              );
-            })}
+            <Slider {...settings}>
+              {DemoNatural.map((f, index) => {
+                return (
+                  <div key={index} className={styles.overflow}>
+                    <div className={styles.borderTop}></div>
+
+                    <div className={styles.para}>
+                      <h5>{f.percentage}</h5>
+                      <p>{f.million}</p>
+                    </div>
+                    <p>{f.description}</p>
+                  </div>
+                );
+              })}
+            </Slider>
           </div>
         </div>
       </div>

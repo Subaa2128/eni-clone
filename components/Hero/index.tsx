@@ -31,15 +31,27 @@ const Hero = () => {
                     <p>{f.description}</p>
                   </div>
                   <div className={styles.flexContent}>
-                    <h4>
-                      Research centre for renewable energy and the environment
-                      in Novara
-                    </h4>
-                    <h4>People and values</h4>
-                    <h4>
-                      New photovoltaic plant under construction in Algeria
-                    </h4>
-                    <h4>Action for gas supply diversification</h4>
+                    <div>
+                      <div className={styles.heroBorderTop}></div>
+                      <h4>
+                        Research centre for renewable energy and the environment
+                        in Novara
+                      </h4>
+                    </div>
+                    <div>
+                      <div className={styles.heroBorderTop}></div>
+                      <h4>People and values</h4>
+                    </div>
+                    <div>
+                      <div className={styles.heroBorderTop}></div>
+                      <h4>
+                        New photovoltaic plant under construction in Algeria
+                      </h4>
+                    </div>
+                    <div>
+                      <div className={styles.heroBorderTop}></div>
+                      <h4>Action for gas supply diversification</h4>
+                    </div>
                   </div>
                 </div>
               );
