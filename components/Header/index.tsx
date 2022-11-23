@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./Header.module.scss";
 import Explore from "./Explore";
-// import { GoGraph } from "react-icons/go";
-// import { FiVideo } from "react-icons/fi";
-// import { FaHardHat } from "react-icons/fa";
+import { GoGraph } from "react-icons/go";
+import { FiVideo } from "react-icons/fi";
+import { FaHardHat } from "react-icons/fa";
 import Logo from "../../public/assets/Header/logo/logo.svg";
 import DropArrow from "../../public/assets/Header/icons/drop-arrow.svg";
 import FourSquare from "../../public/assets/Header/icons/four-square.svg";
 import MenuBar from "../../public/assets/Header/icons/menu-bar.svg";
 import Search from "../../public/assets/Header/icons/search.svg";
+import Demo1 from "../../public/assets/Header/images/pro-service1.jpg";
+import Demo2 from "../../public/assets/Header/images/pro-service2.jpg";
 
 const Header = () => {
   const [dropDown, setDropDown] = useState(false);
@@ -48,7 +51,14 @@ const Header = () => {
             </div>
           </div>
           <div className={styles.contact_icon}>
-            <FourSquare />
+            <div
+              className={styles.menubar}
+              onClick={() => setProduct((m) => !m)}
+            >
+              {" "}
+              <FourSquare />
+            </div>
+
             <div
               className={styles.menubar}
               onClick={() => setDropDown((m) => !m)}
@@ -59,10 +69,33 @@ const Header = () => {
         </div>
         {product && (
           <div className={styles.product_services}>
-            <div className={styles.content}></div>
+            <div className={styles.content}>
+              <div className={styles.channel}>
+                <div className={styles.image}>
+                  <Image src={Demo1} alt="" />
+                </div>
+                <div className={styles.category}>
+                  <span className={styles.dash}></span>
+                  RETAIL
+                </div>
+                <h3>Eni for you</h3>
+                <p>Our energy at your service.</p>
+              </div>
+              <div className={styles.channel}>
+                <div className={styles.image}>
+                  <Image src={Demo2} alt="" />
+                </div>
+                <div className={styles.category}>
+                  <span className={styles.dash}></span>
+                  BUSINESS
+                </div>
+                <h3>For your business</h3>
+                <p>Energy solutions for large and small buisness.</p>
+              </div>
+            </div>
             <div className={styles.close}>
               <div className={styles.heading}>
-                <h1>products and services</h1>
+                <h1>Products and Services</h1>
                 <h1 onClick={() => setProduct(false)}>X</h1>
               </div>
               <div className={styles.detail}>
@@ -92,15 +125,15 @@ const Header = () => {
           </div>
           <div className={styles.investors}>
             <div className={styles.box}>
-              {/* <GoGraph /> */}
+              <GoGraph />
               <p>Investors</p>
             </div>
             <div className={styles.box}>
-              {/* <FiVideo /> */}
+              <FiVideo />
               <p>Media</p>
             </div>
             <div className={styles.box}>
-              {/* <FaHardHat /> */}
+              <FaHardHat />
               <p>Careers</p>
             </div>
           </div>
@@ -123,7 +156,7 @@ const Header = () => {
               <Link href={"/publications"}>publications</Link>
               <span></span>
               <div className={styles.language}>
-                <h5>EN</h5>
+                <h6>EN</h6>
               </div>
             </div>
           </div>
