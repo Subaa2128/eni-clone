@@ -21,10 +21,12 @@ const Header = () => {
       <div className="mx">
         <div className={styles.logo_container}>
           <div className={styles.logo}>
-            <Logo />
+            <Link href={"/"}>
+              <Logo />
+            </Link>
           </div>
           <div className={styles.contact}>
-            <Link href={"/contacts"}>contacts</Link>
+            <Link href={"/contact"}>contacts</Link>
             <Link href={"/publications"}>publications</Link>
             <div className={styles.icon} onClick={() => setProduct((m) => !m)}>
               <FourSquare />
@@ -117,8 +119,8 @@ const Header = () => {
               <h5>media</h5>
               <h5>careers</h5>
               <span></span>
-              <h6>contacts</h6>
-              <h6>publication</h6>
+              <Link href={"/contact"}>contacts</Link>
+              <Link href={"/publications"}>publications</Link>
               <span></span>
               <div className={styles.language}>
                 <h5>EN</h5>

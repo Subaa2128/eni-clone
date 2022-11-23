@@ -1,8 +1,14 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import BackgroundImage from "../components/BackgroundImage";
+import Hero from "../components/Hero";
+import Natural from "../components/Natural";
+import Topic from "../components/Topic";
+import CoralSouthProject from "../home/CoralSouthProject";
+import News from "../home/News";
+import PressReleases from "../home/PressReleases";
+import Technological from "../home/Technological";
 import styles from "../styles/Home.module.scss";
-import Explore from "../public/assets/home/images/CoralSouth-project.jpg";
+
 const Home: NextPage = () => {
   return (
     <div className={styles.home}>
@@ -12,9 +18,13 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <BackgroundImage url={Explore}>ello</BackgroundImage>
-        {/* <BackgroundImage image={Explore}>ello</BackgroundImage>
-        <BackgroundImage image={Explore}>ello</BackgroundImage> */}
+        <Hero />
+        <PressReleases />
+        <Topic />
+        <CoralSouthProject />
+        <News />
+        <Natural />
+        <Technological />
       </main>
     </div>
   );
