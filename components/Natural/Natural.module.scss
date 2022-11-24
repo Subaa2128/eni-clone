@@ -5,11 +5,22 @@
       display: flex;
       align-items: center;
       gap: 2rem;
+      @media (max-width: 615px) {
+        gap: 1rem;
+      }
+      svg {
+        @media (max-width: 615px) {
+          width: 120px;
+        }
+      }
 
       h1 {
         font-size: 2.8rem;
         font-weight: 500;
         color: var(--gray-dark);
+        @media (max-width: 425px) {
+          font-size: 2rem;
+        }
       }
 
       .borderLeft {
@@ -20,9 +31,19 @@
     p {
       padding-top: 1rem;
       font-size: 1.6rem;
+      @media (max-width: 425px) {
+        font-size: 1.5rem;
+      }
     }
     .NaturalContent {
-      padding-top: 4rem;
+      padding: 4.5rem 8rem 1rem;
+      @media (max-width: 1024px) {
+        padding: 4.8rem 1rem 1rem;
+      }
+      @media (max-width: 500px) {
+        margin-left: 3rem;
+      }
+
       .overflow {
         .borderTop {
           border-top: 8px solid var(--yellow);

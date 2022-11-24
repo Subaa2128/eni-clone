@@ -12,21 +12,52 @@ const Natural = () => {
     slidesToShow: 4,
     slidesToScroll: 2,
     autoplay: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 732,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+    ],
   };
   return (
     <div className={styles.NaturalContainer}>
-      <div className="mx pad">
+      <div className="mx">
         <div className={styles.NaturalWrapper}>
-          <div className={styles.NaturalImg}>
-            <NaturalImg />
-            <div className={styles.borderLeft}></div>
-            <h1>Net Zero: our first targets</h1>
+          <div className="pad">
+            <div className={styles.NaturalImg}>
+              <NaturalImg />
+              <div className={styles.borderLeft}></div>
+              <h1>Net Zero: our first targets</h1>
+            </div>
+            <p>
+              We are bringing forward our decarbonisation goal to 2040 by
+              offering our customers ever-increasingly decarbonised products and
+              services. Here are the goals we aim to meet by 2025.
+            </p>
           </div>
-          <p>
-            We are bringing forward our decarbonisation goal to 2040 by offering
-            our customers ever-increasingly decarbonised products and services.
-            Here are the goals we aim to meet by 2025.
-          </p>
 
           <div className={styles.NaturalContent}>
             <Slider {...settings}>

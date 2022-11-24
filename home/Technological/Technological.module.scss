@@ -13,6 +13,13 @@
       width: 100%;
       aspect-ratio: 2.6/1;
       transition: all linear 0.7s;
+      @media (max-width: 1024px) {
+        height: 100%;
+        aspect-ratio: 1.7/1;
+      }
+      @media (max-width: 620px) {
+        aspect-ratio: 1.1/1;
+      }
       &:hover {
         transition: all 0.7s;
         transform: scale(1.1);
@@ -23,14 +30,42 @@
       top: 44%;
       left: 4%;
       transform: translate(8%, 20%);
+      @media (max-width: 1024px) {
+        top: 32%;
+      }
+      @media (max-width: 873px) {
+        left: 0;
+      }
+      @media (max-width: 620px) {
+        top: 22%;
+      }
+      @media (max-width: 425px) {
+        top: 5%;
+      }
+
       h2 {
         font-size: 3rem;
         font-weight: 500;
+        @media (max-width: 873px) {
+          font-size: 2.5rem;
+        }
+        @media (max-width: 695px) {
+          margin-right: 6rem;
+        }
+        @media (max-width: 425px) {
+          font-size: 2.1rem;
+        }
       }
       h6 {
         font-size: 1.6rem;
         font-weight: 600;
         margin-top: 0.8rem;
+        @media (max-width: 873px) {
+          font-size: 1.4rem;
+        }
+        @media (max-width: 695px) {
+          margin-right: 6rem;
+        }
       }
     }
   }
