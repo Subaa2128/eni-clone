@@ -228,13 +228,16 @@
     .home {
       display: flex;
       gap: 2rem;
-      h4 {
-        font-size: 1.8rem;
-        border-bottom: 1px solid var(--yellow);
-
-        &:hover {
-          border-bottom: 0.3rem solid var(--yellow);
+      a {
+        font-weight: 600;
+        p {
+          font-size: 1.6rem;
+          border-bottom: 4px solid var(--yellow);
         }
+      }
+      .linkBorderLeft {
+        border-left: 0.5px solid var(--white);
+        height: 30px;
       }
 
       h5 {

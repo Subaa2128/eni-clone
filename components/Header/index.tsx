@@ -118,7 +118,15 @@ const Header = () => {
         </div>
         <div className={styles.navbar}>
           <div className={styles.home}>
-            <h4>Home</h4>
+            <Link href="/">
+              <p>Home</p>
+            </Link>
+            <div className={styles.linkBorderLeft}></div>
+            <Link href="/aboutUs">Who We are</Link>
+            <Link href="">Operation</Link>
+            <Link href="">Eni worldwide</Link>
+            <Link href="">Just Transition</Link>
+
             <h5 onClick={() => setExplore(true)}>
               EXPLORE <span>+</span>
             </h5>

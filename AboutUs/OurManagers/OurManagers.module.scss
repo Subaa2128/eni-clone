@@ -1,0 +1,41 @@
+.ourManagersContainer {
+  .managementContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5rem 8rem;
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+    }
+    @media (max-width: 873px) {
+      padding: 2rem 4rem;
+    }
+
+    .structure {
+      h2 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        @media (max-width: 425px) {
+          font-size: 2.2rem;
+        }
+      }
+      p {
+        font-size: 1.8rem;
+        margin-top: 0.4rem;
+        @media (max-width: 425px) {
+          margin-top: 1rem;
+          font-size: 1.4rem;
+        }
+      }
+    }
+    .organisational {
+      display: flex;
+      justify-content: flex-end;
+      @media (max-width: 1024px) {
+        margin-top: 3rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
