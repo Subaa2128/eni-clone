@@ -8,6 +8,9 @@
         position: relative;
         width: 100%;
         aspect-ratio: 5.5/3;
+        img {
+          object-fit: cover;
+        }
         @media (max-width: 873px) {
           aspect-ratio: 3.4/3;
         }
