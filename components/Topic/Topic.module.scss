@@ -5,15 +5,19 @@
     font-weight: 600;
   }
   .topicWrapper {
-    display: flex;
-    justify-content: center;
-    gap: 35px;
+    // display: flex;
+    // justify-content: center;
+    // gap: 35px;
     padding: 2rem 0;
 
     .topicContent {
       border-radius: 8px;
       width: 100%;
       position: relative;
+      margin: 1rem;
+      @media (max-width: 450px) {
+        margin-left: 4rem;
+      }
 
       .topicImg {
         width: 290px;

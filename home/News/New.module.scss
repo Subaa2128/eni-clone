@@ -1,6 +1,9 @@
 .newsContainer {
   .newsHead {
     padding: 2.5rem 8rem 0 8rem;
+    @media (max-width: 647px) {
+      padding: 2.4rem 2rem 0 2rem;
+    }
     h2 {
       font-size: 2.8rem;
       font-weight: 500;
@@ -24,6 +27,12 @@
       margin: 3.5rem 2rem 4rem 8rem;
       transition: 0.4s all;
       color: var(--white);
+      @media (max-width: 873px) {
+        margin: 3.5rem 2rem 4rem 4rem;
+      }
+      @media (max-width: 550px) {
+        margin-left: 5rem;
+      }
 
       &:hover {
         transform: scale(1.05);

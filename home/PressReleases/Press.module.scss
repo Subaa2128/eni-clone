@@ -1,6 +1,9 @@
 .pressReleasesContainer {
   .pressReleasesHead {
     padding: 2.5rem 8rem 0 8rem;
+    @media (max-width: 647px) {
+      padding: 2.4rem 2rem 0 2rem;
+    }
     h2 {
       font-size: 2.8rem;
       font-weight: 600;
@@ -26,6 +29,9 @@
       transition: 0.4s all;
       cursor: pointer;
       margin: 1.6rem 2rem 2rem 8rem;
+      @media (max-width: 450px) {
+        margin: 1.6rem 2rem 2rem 6rem;
+      }
 
       &:hover {
         transform: scale(1.05);
