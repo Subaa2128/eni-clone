@@ -4,6 +4,7 @@ import Documents from "../AboutUs/documents";
 import Management from "../AboutUs/Management";
 import OurActivities from "../AboutUs/OurActivities";
 import OurManagers from "../AboutUs/OurManagers";
+import OurPeople from "../AboutUs/OurPeople";
 import WhoweareFinancial from "../AboutUs/WhoweareFinancial";
 
 const aboutUs = () => {
@@ -15,6 +16,7 @@ const aboutUs = () => {
       <OurManagers />
       <Business />
       <Documents />
+      <OurPeople />
     </div>
   );
 };

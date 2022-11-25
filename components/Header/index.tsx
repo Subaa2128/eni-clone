@@ -124,7 +124,7 @@ const Header = () => {
             <div className={styles.linkBorderLeft}></div>
             <Link href="/aboutUs">Who We are</Link>
             <Link href="">Operation</Link>
-            <Link href="">Eni worldwide</Link>
+            <Link href="/eniWorldWide">Eni worldwide</Link>
             <Link href="">Just Transition</Link>
 
             <h5 onClick={() => setExplore(true)}>

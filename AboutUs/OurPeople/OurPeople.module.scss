@@ -1,0 +1,117 @@
+.ourPeopleContainer {
+  position: relative;
+  .ourPeopleWrapper {
+    color: var(--white);
+    .ourBgImg {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("../../public/assets/aboutUs/images/ourPeople.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center 0;
+      text-align: center;
+      width: 100%;
+      height: 60vh;
+      @media (max-width: 1024px) {
+        height: 73vh;
+      }
+    }
+    .content {
+      @media (max-width: 470px) {
+        display: none;
+      }
+      .ourPeopleHead {
+        position: absolute;
+        top: 6%;
+        left: 5%;
+        h4 {
+          font-size: 1.8rem;
+          font-weight: 600;
+        }
+      }
+      .ourPeopleGridContent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8rem;
+        position: absolute;
+        top: 16%;
+        left: 10%;
+        transform: translate(-5%, -5%);
+        @media (max-width: 630px) {
+          gap: 4rem;
+        }
+        .ourPeopleFirst {
+          .firstContent {
+            text-align: center;
+            margin-top: 3.4rem;
+            padding: 1.2rem;
+            transition: 0.9s ease;
+            &:hover {
+              background: #111;
+              opacity: 0.9;
+            }
+            h6 {
+              font-size: 1.4rem;
+              font-weight: 400;
+              span {
+                font-size: 1.9rem;
+                margin-right: 0.5rem;
+              }
+            }
+            p {
+              font-weight: 300;
+            }
+          }
+        }
+        .ourPeopleSecond {
+          text-align: center;
+          margin-top: 3.8rem;
+
+          .firstContent {
+            h6 {
+              span {
+                font-size: 5rem;
+                font-weight: 500;
+              }
+            }
+            p {
+              span {
+                font-size: 2.2rem;
+                font-weight: 600;
+              }
+            }
+          }
+          .secondContent {
+            margin-top: 5rem;
+            padding: 1.2rem;
+            transition: 0.9s ease;
+            &:hover {
+              background: #111;
+              opacity: 0.9;
+            }
+            h6 {
+              font-size: 1.4rem;
+              font-weight: 400;
+              span {
+                font-size: 1.9rem;
+                margin-right: 0.5rem;
+              }
+            }
+            p {
+              font-weight: 300;
+            }
+          }
+        }
+      }
+      .uploadContent {
+        @media (min-width: 470px) {
+          display: none;
+        }
+        @media (max-width: 469px) {
+          display: block;
+          position: absolute;
+          top: 0;
+        }
+      }
+    }
+  }
+}
