@@ -29,22 +29,24 @@ const OurManagers = () => {
 
         <div className={styles.managersWrapper}>
           <div className={styles.managersFirstContent}>
-            <div>
-              <Image src={ManagementOne} alt="" />
+            <div className={styles.managers}>
+              <Image src={ManagementOne} alt="" width={200} height={200} />
             </div>
-            <div>
+            <div className={styles.managementPara}>
               <h6>Lucia Calvosa</h6>
               <p>Chairman of the Board</p>
+              <Arrow />
             </div>
           </div>
 
           <div className={styles.managersFirstContent}>
-            <div>
-              <Image src={ManagementTwo} alt="" />
+            <div className={styles.managers}>
+              <Image src={ManagementTwo} alt="" width={200} height={200} />
             </div>
-            <div>
-              <h6>Lucia Calvosa</h6>
-              <p>Chairman of the Board</p>
+            <div className={styles.managementPara}>
+              <h6>Claudio Descalzi</h6>
+              <p>Chief Executive Officer</p>
+              <Arrow />
             </div>
           </div>
         </div>

@@ -1,0 +1,56 @@
+.documentContainer {
+  padding: 4rem 0;
+  .documentWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    .docImg {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1.9/1.2;
+      clip-path: polygon(
+        20% 0%,
+        80% 0%,
+        100% 0,
+        100% 72%,
+        79% 100%,
+        20% 100%,
+        0 100%,
+        0 0
+      );
+      @media (max-width: 1024px) {
+        aspect-ratio: 1.9/1;
+      }
+    }
+    .docPara {
+      margin: 4rem 4rem 0 0;
+      @media (max-width: 1024px) {
+        margin-left: 2rem;
+      }
+      h2 {
+        font-size: 2.3rem;
+        font-weight: 500;
+        @media (max-width: 425px) {
+          font-size: 2rem;
+        }
+      }
+      p {
+        font-size: 1.8rem;
+        margin-top: 1rem;
+        @media (max-width: 425px) {
+          font-size: 1.4rem;
+        }
+      }
+      Button {
+        font-weight: 500;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        margin-top: 3.5rem;
+      }
+    }
+  }
+}

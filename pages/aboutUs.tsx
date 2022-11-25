@@ -1,4 +1,6 @@
 import React from "react";
+import Business from "../AboutUs/Business";
+import Documents from "../AboutUs/documents";
 import Management from "../AboutUs/Management";
 import OurActivities from "../AboutUs/OurActivities";
 import OurManagers from "../AboutUs/OurManagers";
@@ -11,6 +13,8 @@ const aboutUs = () => {
       <OurActivities />
       <Management />
       <OurManagers />
+      <Business />
+      <Documents />
     </div>
   );
 };

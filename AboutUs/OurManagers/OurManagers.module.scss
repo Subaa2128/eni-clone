@@ -1,8 +1,9 @@
 .ourManagersContainer {
+  padding: 4rem 0;
   .managementContent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 5rem 8rem;
+    padding: 0rem 8rem;
     @media (max-width: 1024px) {
       grid-template-columns: 1fr;
     }
@@ -35,6 +36,50 @@
       }
       p {
         font-size: 1.2rem;
+      }
+    }
+  }
+  .managersWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+    @media (max-width: 723px) {
+      gap: 3em;
+    }
+    @media (max-width: 500px) {
+      display: block;
+    }
+    .managersFirstContent {
+      margin-top: 4rem;
+      @media (max-width: 500px) {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+      }
+      .managers {
+        img {
+          border-radius: 100px;
+          @media (max-width: 500px) {
+            width: 150px;
+            height: 150px;
+          }
+        }
+      }
+      .managementPara {
+        text-align: center;
+        margin-top: 0.6rem;
+        @media (max-width: 500px) {
+          text-align: left;
+        }
+        h6 {
+          font-size: 1.5rem;
+          font-weight: 500;
+        }
+        svg {
+          margin-top: 2rem;
+        }
       }
     }
   }
