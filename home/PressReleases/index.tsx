@@ -8,7 +8,7 @@ import Book from "../../public/assets/Hero/icons/book.svg";
 
 const PressReleases = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 4,

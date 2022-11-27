@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Header.module.scss";
@@ -19,6 +19,7 @@ const Header = () => {
   const [languageDeopdown, setLanguageDropdown] = useState(false);
   const [explore, setExplore] = useState(false);
   const [product, setProduct] = useState(false);
+
   return (
     <div className={styles.header}>
       <div className="mx">
@@ -55,7 +56,6 @@ const Header = () => {
               className={styles.menubar}
               onClick={() => setProduct((m) => !m)}
             >
-              {" "}
               <FourSquare />
             </div>
 
@@ -109,40 +109,42 @@ const Header = () => {
             </div>
           </div>
         )}
-        <div className={styles.search}>
-          <Search />
-          <input
-            type="text"
-            placeholder="Would you like to know more? ask a question"
-          />
-        </div>
-        <div className={styles.navbar}>
-          <div className={styles.home}>
-            <Link href="/">
-              <p>Home</p>
-            </Link>
-            <div className={styles.linkBorderLeft}></div>
-            <Link href="/aboutUs">Who We are</Link>
-            <Link href="">Operation</Link>
-            <Link href="/eniWorldWide">Eni worldwide</Link>
-            <Link href="">Just Transition</Link>
-
-            <h5 onClick={() => setExplore(true)}>
-              EXPLORE <span>+</span>
-            </h5>
+        <div className={styles.search_nav_container}>
+          <div className={styles.search}>
+            <Search />
+            <input
+              type="text"
+              placeholder="Would you like to know more? ask a question"
+            />
           </div>
-          <div className={styles.investors}>
-            <div className={styles.box}>
-              <GoGraph />
-              <p>Investors</p>
+          <div className={styles.navbar}>
+            <div className={styles.home}>
+              <Link href="/">
+                <p>Home</p>
+              </Link>
+              <div className={styles.linkBorderLeft}>
+                <Link href="/aboutUs">Who We are</Link>
+                <Link href="">Operation</Link>
+                <Link href="/eniWorldWide">Eni worldwide</Link>
+                <Link href="">Just Transition</Link>
+              </div>
+              <h5 onClick={() => setExplore(true)}>
+                EXPLORE <span>+</span>
+              </h5>
             </div>
-            <div className={styles.box}>
-              <FiVideo />
-              <p>Media</p>
-            </div>
-            <div className={styles.box}>
-              <FaHardHat />
-              <p>Careers</p>
+            <div className={styles.investors}>
+              <div className={styles.box}>
+                <GoGraph />
+                <p>Investors</p>
+              </div>
+              <div className={styles.box}>
+                <FiVideo />
+                <p>Media</p>
+              </div>
+              <div className={styles.box}>
+                <FaHardHat />
+                <p>Careers</p>
+              </div>
             </div>
           </div>
         </div>

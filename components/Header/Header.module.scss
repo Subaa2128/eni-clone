@@ -1,8 +1,7 @@
 .header {
   background-image: linear-gradient(#000, transparent);
-
-  position: fixed;
   z-index: 100;
+  position: fixed;
   background-color: transparent;
   margin: 0 auto;
   width: 100%;
@@ -11,11 +10,15 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+    // height: 100px;
+
     .logo {
       background-color: var(--white);
       clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
       padding: 0rem 6rem;
-
+      @media (max-width: 600px) {
+        padding: 0;
+      }
       svg {
         width: 50%;
         padding: 1rem;
@@ -27,6 +30,10 @@
       padding: 0rem 6rem;
       color: var(--white);
       text-transform: capitalize;
+
+      @media (max-width: 1050px) {
+        padding: 0rem 4rem 0 0;
+      }
       @media (max-width: 1000px) {
         display: none;
       }
@@ -76,10 +83,13 @@
         align-items: center;
         gap: 1rem;
         transition: all 0.3s;
-        padding-right: 1rem;
+        padding-right: 7rem;
         right: 0;
         transition: transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99),
           -webkit-transform 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
+      }
+      @media (max-width: 720px) {
+        padding-right: 3rem;
       }
     }
   }
@@ -122,17 +132,17 @@
             margin-right: 10px;
             -webkit-transition: ease-in-out 0.5s;
             transition: ease-in-out 0.5s;
-            // &:hover {
-            //   -webkit-transform: rotate(-90deg) translateY(-10px);
-            //   transform: rotate(-90deg) translateY(-10px);
-            //   -webkit-transition: ease-in-out 0.5s;
-            //   transition: ease-in-out 0.5s;
-            //   // width: 27px;
-            //   // height: 3px;
-            //   // background: #ffd300;
-            //   // display: inline-block;
-            //   margin-right: -4px;
-            // }
+            &:hover {
+              -webkit-transform: rotate(-90deg) translateY(-10px);
+              transform: rotate(-90deg) translateY(-10px);
+              -webkit-transition: ease-in-out 0.5s;
+              transition: ease-in-out 0.5s;
+              // width: 27px;
+              // height: 3px;
+              // background: #ffd300;
+              // display: inline-block;
+              margin-right: -4px;
+            }
           }
         }
         h3 {
@@ -188,93 +198,114 @@
       }
     }
   }
-  .search {
-    margin: 2rem 7rem;
-    display: flex;
-    gap: 3rem;
-    width: 90%;
-    border: 1px solid var(--white);
-    border-radius: 25px;
-    padding: 1rem;
-    @media (max-width: 1000px) {
-      display: none;
-    }
-    &:hover {
-      border: 1px solid var(--yellow);
-      svg {
-        color: var(--yellow);
-      }
-    }
-    svg {
-      color: rgba(255, 255, 255, 0.8);
-    }
-    input {
-      width: 100%;
-      border: none;
-      outline: none;
-      background-color: transparent;
-      color: rgba(255, 255, 255, 0.8);
-      &::placeholder {
-        color: rgba(255, 255, 255, 0.8);
-      }
-    }
-  }
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem 7.5rem 1rem;
-    color: #fff;
-    .home {
+  .search_nav_container {
+    // position: relative;
+    position: sticky;
+    top: 0;
+    .search {
+      margin: 2rem 7rem;
       display: flex;
-      gap: 2rem;
-      a {
-        font-weight: 600;
-        p {
-          font-size: 1.6rem;
-          border-bottom: 4px solid var(--yellow);
-        }
-      }
-      .linkBorderLeft {
-        border-left: 0.5px solid var(--white);
-        height: 30px;
-      }
-
-      h5 {
-        display: flex;
-        gap: 1rem;
-        align-items: center;
-        border-left: 1px solid #fff;
-        height: fit-content;
-        padding-left: 1.5rem;
-        cursor: pointer;
-        span {
-          border: 1px solid var(--white);
-          border-radius: 50%;
-          width: 2rem;
-          display: flex;
-          justify-content: center;
-          aspect-ratio: 1;
-        }
-      }
-    }
-    .investors {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      .box {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        svg {
-          font-size: 3rem;
-        }
-      }
-      @media (max-width: 600px) {
+      gap: 3rem;
+      width: 90%;
+      border: 1px solid var(--white);
+      border-radius: 25px;
+      padding: 1rem;
+      position: sticky;
+      top: 10%;
+      @media (max-width: 1000px) {
         display: none;
       }
+      &:hover {
+        border: 1px solid var(--yellow);
+        svg {
+          color: var(--yellow);
+        }
+      }
+      svg {
+        color: rgba(255, 255, 255, 0.8);
+      }
+      input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: rgba(255, 255, 255, 0.8);
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.8);
+        }
+      }
+    }
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 7.5rem 1rem;
+      color: #fff;
+      @media (max-width: 600px) {
+        padding: 2rem;
+      }
+
+      .home {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        a {
+          font-weight: 600;
+          p {
+            font-size: 1.6rem;
+            border-bottom: 4px solid var(--yellow);
+          }
+        }
+        .linkBorderLeft {
+          border-left: 0.5px solid var(--white);
+          height: fit-content;
+          padding-left: 2rem;
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+          justify-content: space-between;
+          @media (max-width: 1030px) {
+            display: none;
+          }
+        }
+
+        h5 {
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+          border-left: 1px solid #fff;
+          height: fit-content;
+          padding-left: 1.5rem;
+          cursor: pointer;
+          span {
+            border: 1px solid var(--white);
+            border-radius: 50%;
+            width: 2rem;
+            display: flex;
+            justify-content: center;
+            aspect-ratio: 1;
+          }
+        }
+      }
+      .investors {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        .box {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          svg {
+            font-size: 3rem;
+          }
+        }
+        @media (max-width: 720px) {
+          display: none;
+        }
+      }
     }
   }
+
   .side_navbar {
     transform: translate3d(0, 0, 0);
     position: absolute;
