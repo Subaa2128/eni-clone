@@ -5,6 +5,7 @@
   background-color: transparent;
   margin: 0 auto;
   width: 100%;
+  transition: top 200ms linear;
   .logo_container {
     display: flex;
     align-items: center;
@@ -200,8 +201,7 @@
   }
   .search_nav_container {
     // position: relative;
-    position: sticky;
-    top: 0;
+
     .search {
       margin: 2rem 7rem;
       display: flex;
@@ -210,8 +210,7 @@
       border: 1px solid var(--white);
       border-radius: 25px;
       padding: 1rem;
-      position: sticky;
-      top: 10%;
+
       @media (max-width: 1000px) {
         display: none;
       }

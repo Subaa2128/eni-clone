@@ -19,9 +19,32 @@ const Header = () => {
   const [languageDeopdown, setLanguageDropdown] = useState(false);
   const [explore, setExplore] = useState(false);
   const [product, setProduct] = useState(false);
+  const [isScroll, setIsScroll] = useState(false);
+  const [isScrollDown, setIsScrollDown] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY >= 100) {
+        setIsScroll(true);
+      } else {
+        setIsScroll(false);
+      }
+      if (window.scrollY >= 500) {
+        setIsScrollDown(true);
+        setIsScroll(false);
+      } else {
+        setIsScrollDown(false);
+      }
+    });
 
+    // console.log(window.scrollY);
+    // console.log(isScrollDown);
+  });
+  console.log(isScrollDown);
   return (
-    <div className={styles.header}>
+    <div
+      className={styles.header}
+      style={{ top: isScroll ? "-65px" : isScrollDown ? "-130px" : 0 }}
+    >
       <div className="mx">
         <div className={styles.logo_container}>
           <div className={styles.logo}>
